@@ -52,7 +52,7 @@ class NdkClassicCompile extends BaseTask {
             exe += ".cmd"
         }
         commands.add(exe)
-        commands.add("NDK_PROJECT_PATH=null")
+        //commands.add("NDK_PROJECT_PATH=null")
         if (getApplicationMk().exists()) {
             commands.add("NDK_APPLICATION_MK=" + getApplicationMk().absolutePath)
         }
